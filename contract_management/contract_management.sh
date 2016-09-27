@@ -1,4 +1,4 @@
-curl -XPOST -d '{"jsonrpc": "2.0", "method": "deploy", "params": {"type": 1,"chaincodeID": {"path": "github.com/lightning-li/fabric-chaincode-sample/contract_management","language": "GOLANG"}, "ctorMsg": { "args": ["init"] }, "metadata":[97, 115, 115, 105, 103, 110, 101, 114] ,"secureContext": "assigner"} ,"id": 0}' http://localhost:7050/chaincode
+curl -XPOST -d '{"jsonrpc": "2.0", "method": "deploy", "params": {"type": 1,"chaincodeID": {"path": "http://github.com/lightning-li/fabric-chaincode-sample/contract_management","language": "GOLANG"}, "ctorMsg": { "args": ["init"] }, "metadata":[97, 115, 115, 105, 103, 110, 101, 114] ,"secureContext": "assigner"} ,"id": 0}' http://localhost:7050/chaincode
 
 #curl -XPOST -d '{"jsonrpc": "2.0", "method": "deploy", "params": {"type": 1,"chaincodeID": {"path": "github.com/hyperledger/fabric/examples/chaincode/go/asset_management_with_roles","language": "GOLANG"}, "ctorMsg": { "args": ["init"] }, "metadata":[97, 115, 115, 105, 103, 110, 101, 114] ,"secureContext": "assigner"} ,"id": 0}' http://localhost:7050/chaincode
 
